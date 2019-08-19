@@ -5,11 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CameraActivity">
 
     <com.google.android.gms.samples.vision.face.facetracker.ui.camera.CameraSourcePreview
         android:id="@+id/preview"
         android:layout_width="match_parent"
+        android:visibility="visible"
         android:layout_height="fill_parent">
 
         <com.google.android.gms.samples.vision.face.facetracker.ui.camera.GraphicOverlay
@@ -18,5 +19,6 @@
             android:layout_height="match_parent" />
 
     </com.google.android.gms.samples.vision.face.facetracker.ui.camera.CameraSourcePreview>
+
 
 </RelativeLayout>
