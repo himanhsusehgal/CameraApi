@@ -136,12 +136,14 @@ public class MainActivity extends AppCompatActivity {
                     .setRequestedPreviewSize(frontWidth, frontHeight)
                     .setFacing(CameraSource.CAMERA_FACING_BACK)
                     .setRequestedFps(30.0f)
+                    .setAutoFocusEnabled(true)
                     .build();
         }else {
             mCameraSource = new CameraSource.Builder(context, detector)
                     .setRequestedPreviewSize(frontWidth, frontHeight)
                     .setFacing(CameraSource.CAMERA_FACING_FRONT)
                     .setRequestedFps(30.0f)
+                    .setAutoFocusEnabled(true)
                     .build();
         }
 
